@@ -1,5 +1,14 @@
 
-
+/**
+ * @fileoverview 此类表示地图上的一个覆盖物，该覆盖物由文字和图标组成，从Overlay继承。
+ * 主入口类是<a href="symbols/BMapLib.Infobox.html">TextIconOverlay</a>，
+ * 基于Baidu Map API 1.2。
+ *
+ * @author Baidu Map Api Group 
+ * @version 1.2
+ * http://api.map.baidu.com/library/InfoBox/1.2/src/InfoBox.js
+ */
+ 
 (function (root, factory) {
     if (typeof exports === 'object') {
         module.exports = { default: factory(), InfoBox: factory() };
