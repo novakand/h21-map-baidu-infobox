@@ -259,11 +259,9 @@
             this.__proto__ = infobox.__proto__;
         }
 
-
         this._content = content || "";
         this._isOpen = false;
         this._map = map;
-
         this._opts = opts = opts || {};
         this._opts.offset = opts.offset || new BMap.Size(0, 0);
         this._opts.boxClass = opts.boxClass || "infoBox";
