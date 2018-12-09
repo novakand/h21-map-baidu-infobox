@@ -35,7 +35,7 @@
         for (key in selfProps) {
             proto[key] = selfProps[key];
         }
-        console.log('inherits')
+     
         subClass.prototype.constructor = subClass;
         subClass.superClass = superClass.prototype;
         if ("string" == typeof className) {
@@ -179,7 +179,7 @@
         if (fixer = dom._styleFilter) {
             value = fixer.filter(key, value, 'set');
         }
-
+     
         fixer = dom._styleFixer[key];
         (fixer && fixer.set) ? fixer.set(element, value) : (element.style[fixer || key] = value);
 
@@ -269,7 +269,11 @@
         this._opts.boxClass = opts.boxClass || "infoBox";
         this._opts.boxStyle = opts.boxStyle || {};
         this._opts.closeIconMargin = opts.closeIconMargin || "2px";
-        this._opts.closeIconUrl = opts.closeIconUrl || "close.png";
+        this._opts.closeIconUrl = opts.closeIconUrl || "//www.google.com/intl/en_us/mapfiles/close.gif";
+        if (opts.closeIconUrl === "") {
+        this.closeIconUrl = "";
+         
+        }
         this._opts.enableAutoPan = opts.enableAutoPan ? true : false;
         this._opts.align = opts.align || INFOBOX_AT_TOP;
     }
