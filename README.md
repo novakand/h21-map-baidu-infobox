@@ -1,11 +1,11 @@
-# @h21-map/infobox-baidu
+# @h21-map/baidu-infobox
 
 ### Installation
 ```bash
-npm i @h21-map/infobox-baidu
+npm i @h21-map/baidu-infobox
 ```
 ### How to use
 Load google maps javascript api asynchronously
 ```bash
-import {InfoBox} from '@h21-map/infobox-baidu'
+import {InfoBox} from '@h21-map/baidu-infobox'
 ```
